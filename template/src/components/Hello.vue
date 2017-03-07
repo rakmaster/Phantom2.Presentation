@@ -22,7 +22,7 @@
     {{#store}}
     computed: {
       ...mapState({
-        msg: state => state.message
+        msg: state => state.hello.message
       }){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     {{/store}}
