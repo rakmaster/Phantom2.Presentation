@@ -7,7 +7,7 @@
 <script>
   {{#store}}
   import { mapState } from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  console.log(mapState){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
   {{/store}}
   export default {
     data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
