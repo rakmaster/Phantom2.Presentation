@@ -10,7 +10,7 @@ The extra functionalities added are:
 
 - [vue-router](https://github.com/vuejs/vue-router) for routing.
 - [vuex](https://github.com/vuejs/vuex) for application states and store management.
-- [Vue Material](https://vuematerial.github.io/#/) for UI.
+- [vue-material](https://vuematerial.github.io/#/) for UI.
 - [vue-resource](https://github.com/vuejs/vue-resource) for APIs and HTTP requests.
 
 **Every functionality mentioned above is optional which means, you can switch them off easily during the initial stage without any issue with the other functionalities.**
@@ -23,7 +23,7 @@ With [vue-cli](https://www.npmjs.com/package/vue-cli) globally installed, just r
 
 ```
 $ npm i -g vue-cli
-$ vue init pksunkara/spoiler appname
+$ vue init rakmaster/phantom2 appname
 ```
 
 Your singe page application is now ready to be developed.
