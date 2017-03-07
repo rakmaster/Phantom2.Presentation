@@ -13,7 +13,7 @@ import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/resource}}
 {{#router}}
-import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import router from '@/router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
 {{#store}}
 import store from '@/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

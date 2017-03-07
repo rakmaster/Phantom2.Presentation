@@ -7,6 +7,7 @@
 <script>
   {{#store}}
   import { mapState } from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  console.log(mapState){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   {{/store}}
   export default {
     data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
@@ -14,14 +15,16 @@
       return {}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
       {{else}}
       return {
-        msg: 'Hello Vue!'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+        msg: 'Welcome to Phantom2'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
       }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
       {{/if}}
     }{{#if_eq lintConfig "airbnb"}}{{#unless store}},{{/unless}}{{/if_eq}}{{#store}},{{/store}}
     {{#store}}
-    computed: mapState({
-      msg: state => state.Hello.message{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    }){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    computed: {
+      ...mapState({
+        msg: state => state.message
+      }){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     {{/store}}
   }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
