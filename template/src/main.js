@@ -29,10 +29,10 @@ new Vue({
   router,
   {{/router}}
   {{#store}}
-  store{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  store,
   {{/store}}
   {{#resource}}
-  http: {}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  http: {},
   {{/resource}}
   {{#if_eq build "runtime"}}
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
