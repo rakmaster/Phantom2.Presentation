@@ -6,7 +6,28 @@ module.exports = {
       }
 
       return options.inverse(this);
-    }
+    },
+    "if_or_not": function (v1, v2, options) {
+      if (v1 || !v2) {
+        return options.fn(this);
+      }
+
+      return options.inverse(this);
+    },
+    "if_and_not": function (v1, v2, options) {
+      if (v1 && !v2) {
+        return options.fn(this);
+      }
+
+      return options.inverse(this);
+    },
+    "unless_or": function (v1, v2, options) {
+      if (!v1 || !v2) {
+        return options.fn(this);
+      }
+
+      return options.inverse(this);
+    },
   },
   "prompts": {
     "name": {
@@ -44,6 +65,14 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "store": {
+      "type": "confirm",
+      "message": "Use vuex for state management?"
+    },
+    "material": {
+      "type": "confirm",
+      "message": "Use vue material for UI?"
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
@@ -80,13 +109,15 @@ module.exports = {
     }
   },
   "filters": {
+    "src/router/**/*": "router",
+    "src/store/**/*": "store",
+    "src/styles/*": "material",
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
     "config/test.env.js": "unit || e2e",
     "test/unit/**/*": "unit",
     "build/webpack.test.conf.js": "unit",
-    "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    "test/e2e/**/*": "e2e"
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

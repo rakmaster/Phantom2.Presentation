@@ -1,27 +1,39 @@
-# vue-webpack-boilerplate
+# phantom2
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+Single Page Application Boilerplate
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> A Phantom 2 presentation framework using vue, vuex, vue-resource and vue-material
 
-## Documentation
+An extension of the official [webpack](http://github.com/vuejs-templates/webpack) boilerplate with all the bells, buzzers and wistles... and vue-material too.
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+The extra functionalities added are:
+
+- [vue-router](https://github.com/vuejs/vue-router) for routing.
+- [vuex](https://github.com/vuejs/vuex) for application states and store management.
+- [Vue Material](https://vuematerial.github.io/#/) for UI.
+- [vue-resource](https://github.com/vuejs/vue-resource) for APIs and HTTP requests.
+
+**Every functionality mentioned above is optional which means, you can switch them off easily during the initial stage without any issue with the other functionalities.**
+
+All the functionalities have been made as independent of each other as possible.
 
 ## Usage
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
+With [vue-cli](https://www.npmjs.com/package/vue-cli) globally installed, just run the following command:
 
-``` bash
-$ npm install -g vue-cli
-$ vue init webpack my-project
-$ cd my-project
+```
+$ npm i -g vue-cli
+$ vue init pksunkara/spoiler appname
+```
+
+Your singe page application is now ready to be developed.
+
+```
 $ npm install
 $ npm run dev
 ```
 
-If port 8080 is already in use on your machine you must change the port number in `/config/index.js`. Otherwise `npm run dev` will fail.
+**It is recommended to use npm 3+ for a more efficient dependency tree.**
 
 ## What's Included
 
@@ -49,11 +61,3 @@ If port 8080 is already in use on your machine you must change the port number i
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```

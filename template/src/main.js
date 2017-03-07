@@ -3,10 +3,22 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#material}}
+import VueMaterial from 'vue-material'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(VueMaterial){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(VueMaterial.mdCore)
+{{/material}}
+{{#resource}}
+import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/resource}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
+{{#store}}
+import store from '@/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/store}}
+import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
@@ -16,6 +28,12 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
+  {{#store}}
+  store{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  {{/store}}
+  {{#resource}}
+  http: {}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  {{/resource}}
   {{#if_eq build "runtime"}}
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
