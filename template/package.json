@@ -24,7 +24,7 @@
     "vuex": "^2.1.2",
     {{/store}}
     {{#material}}
-    "vue-material": "^0.7.1"
+    "vuetify": "^0.8.10"
     {{/material}}
   },
   "devDependencies": {

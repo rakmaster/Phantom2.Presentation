@@ -4,8 +4,8 @@
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#material}}
-import VueMaterial from 'vue-material'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-Vue.use(VueMaterial){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Vuetify from 'vuetify'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(Vuetify){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/material}}
 {{#resource}}
 import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

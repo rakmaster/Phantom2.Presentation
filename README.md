@@ -10,7 +10,7 @@ The extra functionalities added are:
 
 - [vue-router](https://github.com/vuejs/vue-router) for routing.
 - [vuex](https://github.com/vuejs/vuex) for application states and store management.
-- [vue-material](https://vuematerial.github.io/#/) for UI.
+- [vuetify](https://vuetifyjs.com/) for UI.
 - [vue-resource](https://github.com/vuejs/vue-resource) for APIs and HTTP requests.
 
 **Every functionality mentioned above is optional which means, you can switch them off easily during the initial stage without any issue with the other functionalities.**
