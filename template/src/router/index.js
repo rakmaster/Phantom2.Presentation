@@ -15,6 +15,6 @@ const routes = [
 
 /* eslint-disable no-new */
 export default new VueRouter({
-  routes{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-mode: 'history'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  routes,
+  mode: 'history'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
