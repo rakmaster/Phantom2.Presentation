@@ -1,4 +1,4 @@
-# phantom2
+# Phantom2.Presentation
 
 Single Page Application Boilerplate
 
@@ -23,7 +23,7 @@ With [vue-cli](https://www.npmjs.com/package/vue-cli) globally installed, just r
 
 ```
 $ npm i -g vue-cli
-$ vue init rakmaster/phantom2 appname
+$ vue init rakmaster/Phantom2.Presentation appname
 ```
 
 Your singe page application is now ready to be developed.
