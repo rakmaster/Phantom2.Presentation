@@ -1,4 +1,4 @@
-# phantom2
+# Phantom2.Presentation
 
 Single Page Application Boilerplate
 
