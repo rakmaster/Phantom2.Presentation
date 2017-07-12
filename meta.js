@@ -71,7 +71,7 @@ module.exports = {
     },
     "material": {
       "type": "confirm",
-      "message": "Use vue material for UI?"
+      "message": "Use vuetifyjs for UI?"
     },
     "lint": {
       "type": "confirm",

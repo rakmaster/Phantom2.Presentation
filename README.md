@@ -2,16 +2,16 @@
 
 Single Page Application Boilerplate
 
-> A Phantom 2 presentation framework using vue, vuex, vue-resource and vue-material
+> A Phantom 2 presentation framework using vue, vuex, vue-router, axios and vuetify
 
-An extension of the official [webpack](http://github.com/vuejs-templates/webpack) boilerplate with all the bells, buzzers and wistles... and vue-material too.
+An extension of the official [webpack](http://github.com/vuejs-templates/webpack) boilerplate with all the bells, buzzers and whistles... and vuetify too.
 
 The extra functionalities added are:
 
 - [vue-router](https://github.com/vuejs/vue-router) for routing.
 - [vuex](https://github.com/vuejs/vuex) for application states and store management.
 - [vuetify](https://vuetifyjs.com/) for UI.
-- [vue-resource](https://github.com/vuejs/vue-resource) for APIs and HTTP requests.
+- [axios](https://github.com/mzabriskie/axios) for APIs and HTTP requests.
 
 **Every functionality mentioned above is optional which means, you can switch them off easily during the initial stage without any issue with the other functionalities.**
 
